@@ -35,8 +35,8 @@ Pastikan Anda telah menginstal npm di sistem Anda.
    ```
 
 ## Konfigurasi
-**Auth Data**: Pada `DevTools` pergi ke `Application` > `Session storage` > `Key __telegram__initParams` > `Copy Value` pada `tgWebAppData` (`query_id=`)
-**query.txt** Anda akan menemukan file `query.txt` di dalam direktori proyek. Pastikan `query.txt` berisi data yang sesuai dengan format yang diharapkan oleh skrip. Berikut adalah contoh format file:
+- **Auth Data**: Pada `DevTools` pergi ke `Application` > `Session storage` > `Key __telegram__initParams` > `Copy Value` pada `tgWebAppData` (`query_id=`)
+- **query.txt** Anda akan menemukan file `query.txt` di dalam direktori proyek. Pastikan `query.txt` berisi data yang sesuai dengan format yang diharapkan oleh skrip. Berikut adalah contoh format file:
 
   ```bash
   query_id=
