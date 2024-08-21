@@ -3,7 +3,6 @@ OKX Racer BOT
 
 Register Here : [OKX Racer](https://t.me/OKX_official_bot/OKX_Racer?startapp=linkCode_114965710)
 
-
 ## Fitur
 
   - Auto Get Account Information
@@ -35,8 +34,9 @@ Pastikan Anda telah menginstal npm di sistem Anda.
    ```
 
 ## Konfigurasi
-- **Auth Data**: Pada `DevTools` pergi ke `Application` > `Session storage` > `Key __telegram__initParams` > `Copy Value` pada `tgWebAppData` (`query_id=`)
-- **query.txt** Anda akan menemukan file `query.txt` di dalam direktori proyek. Pastikan `query.txt` berisi data yang sesuai dengan format yang diharapkan oleh skrip. Berikut adalah contoh format file:
+
+- **Auth Data:** Pada **DevTools** pergi ke **Application** > **Session storage** > **Key __telegram__initParams** > `Copy Value` pada **tgWebAppData** `query_id=`
+- **query.txt:** Anda akan menemukan file `query.txt` di dalam direktori proyek. Pastikan `query.txt` berisi data yang sesuai dengan format yang diharapkan oleh skrip. Berikut adalah contoh format file:
 
   ```bash
   query_id=
@@ -44,12 +44,14 @@ Pastikan Anda telah menginstal npm di sistem Anda.
   ```
 
 ## Jalankan
+
 ```bash
 npm run start
 ```
 ## Note
-- Jika bot error karena `server`, perbarui `query_id`.
-- Jika bot error dengan masalah `internet`, gunakan `vpn` atau `penyedia layanan internet lain`.
+
+- Jika bot error karena **`server`**, perbarui `query_id`.
+- Jika bot error dengan masalah **`internet`**, gunakan `vpn` atau `penyedia layanan internet lain`.
 
 ## Penutup
 
