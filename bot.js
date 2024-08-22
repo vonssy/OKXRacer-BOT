@@ -303,6 +303,23 @@ class OKX_RACER {
         }));
     }
 
+    printWelcomeMessage() {
+        console.log(`
+┌─────────────────────────────────────────────────────┐
+│██╗   ██╗ ██████╗ ███╗   ██╗███████╗███████╗██╗   ██╗│
+│██║   ██║██╔═══██╗████╗  ██║██╔════╝██╔════╝╚██╗ ██╔╝│
+│██║   ██║██║   ██║██╔██╗ ██║███████╗███████╗ ╚████╔╝ │
+│╚██╗ ██╔╝██║   ██║██║╚██╗██║╚════██║╚════██║  ╚██╔╝  │
+│ ╚████╔╝ ╚██████╔╝██║ ╚████║███████║███████║   ██║   │
+│  ╚═══╝   ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚══════╝   ╚═╝   │
+└─────────────────────────────────────────────────────┘
+              `.magenta.bold);
+        console.log(`${'OKX Racer BOT'}`.yellow.bold);
+        console.log(`${`Update Link: ${'https://github.com/vonssy/OKXRacer-BOT'.cyan.underline}`}`.green.bold);
+        console.log(`${`Donate? ${'081328733023'.cyan.underline} ${`- DANA`.green}`}`.green.bold);
+        console.log(`${'NOT FOR SALE ! Edit Boleh, Rename Jangan :)\n\n'}`.yellow.bold);
+    }
+
     async main() {
         const dataFile = path.join(__dirname, 'query.txt');
         const userData = fs.readFileSync(dataFile, 'utf8')
@@ -320,6 +337,7 @@ class OKX_RACER {
         const shouldUpgradeTurboCharger = upgradeTurboCharger.toLowerCase() === 'y';
     
         while (true) {
+            this.printWelcomeMessage()
             for (let i = 0; i < userData.length; i++) {
                 const queryId = userData[i];
                 const { extUserId, extUserName } = this.extractUserData(queryId);
@@ -436,7 +454,7 @@ class OKX_RACER {
                     console.log(`${'Error:'.red} ${error.message}`);
                 }
             }
-            await this.waitWithCountdown(2000);
+            await this.waitWithCountdown(1800);
         }
     }
 }
