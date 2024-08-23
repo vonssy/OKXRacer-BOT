@@ -50,8 +50,10 @@ npm run start
 ```
 ## Note
 
-- Jika bot error karena **`server`**, perbarui `query_id`.
-- Jika bot error dengan masalah **`internet`**, gunakan `vpn` atau `penyedia layanan internet lain`.
+**ERROR:**
+- **CODE 401:** Perbarui `query_id`, biasanya sehari sekali harus diperbarui.
+- **CODE 429:** Jalankan ulang bot.
+- **CODE 403:** Gunakan `VPN` atau penyedia layanan internet lain
 
 ## Penutup
 
